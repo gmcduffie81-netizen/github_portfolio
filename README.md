@@ -49,7 +49,7 @@ The long version of the design is in SHOWCASE. If you want the full tour of what
 
 **Everyone:** [docs/SHOWCASE.md](docs/SHOWCASE.md)
 
-Covers the spider-web data pulls, the end-of-day note relay (office -> region -> company), the daily trouble-call / R12 style pack, claims (including a $1500 vs $78 repair story), and why console and portal are different.
+Covers the spider-web data pulls, the end-of-day note relay (office -> region -> company), the daily trouble-call / R12 style pack, claims, and why the console and portal are different.
 
 **Coders only if you want:** poke around under `samples/`. Read in the browser. No install required.
 
