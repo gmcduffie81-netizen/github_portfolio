@@ -92,6 +92,7 @@ Rough timing: early pull → supervisor mail → pause → note re-pull → RM m
 ---
 
 ## R12 / trouble call daily pack
+<img width="557" height="537" alt="image" src="https://github.com/user-attachments/assets/3a9d8d9e-0bfa-4343-8c57-1c0c2e054542" />
 
 R12 is the 12-day return world. A re-roll hurts. You're paying a tech to fix something the company often doesn't get paid for again, and that tech isn't on a productive job. Double loss. Leadership needs more than a raw dump — what happened, where we messed up, what to watch next time.
 
