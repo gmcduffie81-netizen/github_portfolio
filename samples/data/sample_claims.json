@@ -1,0 +1,29 @@
+[
+  {
+    "claim_id": "CLM-2401",
+    "customer_name": "Alex Rivera",
+    "office": "North Yard",
+    "status": "Closed",
+    "contractor_quote": 1500.0,
+    "in_house_repair_cost": 78.0,
+    "work": "Custom bracket, dish remount to eave, reinforced split fascia"
+  },
+  {
+    "claim_id": "CLM-2402",
+    "customer_name": "Jordan Lee",
+    "office": "West Yard",
+    "status": "Denied",
+    "contractor_quote": null,
+    "in_house_repair_cost": null,
+    "work": null
+  },
+  {
+    "claim_id": "CLM-2403",
+    "customer_name": "Sam Patel",
+    "office": "North Yard",
+    "status": "Assessment Scheduled",
+    "contractor_quote": 890.0,
+    "in_house_repair_cost": null,
+    "work": null
+  }
+]

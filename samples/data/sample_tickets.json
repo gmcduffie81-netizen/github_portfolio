@@ -1,0 +1,29 @@
+[
+  {
+    "ticket_id": 1001,
+    "van_tag": "UNIT-12",
+    "office": "North Yard",
+    "status": "Scheduled",
+    "schedule_date": "2026-07-10",
+    "vendor": "City Tire",
+    "purpose": "Oil change and brakes"
+  },
+  {
+    "ticket_id": 1002,
+    "van_tag": "UNIT-44",
+    "office": "North Yard",
+    "status": "Open",
+    "schedule_date": null,
+    "vendor": null,
+    "purpose": "AC check"
+  },
+  {
+    "ticket_id": 1003,
+    "van_tag": "UNIT-07",
+    "office": "West Yard",
+    "status": "Closed",
+    "schedule_date": "2026-07-01",
+    "vendor": "In-House Shop",
+    "purpose": "Inspection"
+  }
+]
