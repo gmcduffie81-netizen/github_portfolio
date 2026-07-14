@@ -1,6 +1,8 @@
 # What this System actually is
 
-Glenn McDuffie - I built this alone. No I'm not bragging because none of the other programmers helped. You see, I am the only one there. I wasn't hired to do it, It all started when the Director at one time asked. "Hey, When you first came on-board 7 or so years ago, you mentioned to me you went to school for programming. We were wondering maybe you could tell us how we could effectively send emails to all the technicians daily about how well the are doing and where they stand on meeting metric minimums for their bonuses."
+Glenn McDuffie - I built this alone. 
+
+**No I'm not bragging** because none of the other programmers helped. You see, I am the only one there. (ok.. maybe a little bragging.) I wasn't hired to do it, It all started when the Director at one time asked. "Hey, When you first came on-board 7 or so years ago, you mentioned to me you went to school for programming. We were wondering maybe you could tell us how we could effectively send emails to all the technicians daily about how well the are doing and where they stand on meeting metric minimums for their bonuses."
 
 **This was the event that started everything**
 
