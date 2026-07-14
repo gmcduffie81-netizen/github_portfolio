@@ -131,10 +131,11 @@ The pipeline checks and flattens so you're not stuck in "my Tableau says X, your
 ---
 
 ## Console + portal UI sample
+<img width="1474" height="956" alt="image" src="https://github.com/user-attachments/assets/22ee4274-29e9-443e-aa04-d48999253357" />
 
-`samples/console_ui/` is a scrubbed static slice — chips for overview / claims / fleet / R12 / EOD, search, list rows, status pills. Not the real app. No secrets. No live data. Just enough to show it's built for a job, not "hello world."
+`samples/console_ui/` is a scrubbed static slice — chips for overview / claims / fleet / R12 / EOD, search, list rows, status pills. Not the real app. No secrets. No live data. Just enough to show it's built for a job, not "hello world." This screenshot, however, is a sample of the actual running solution for Inventory Confirmations with technicians. (A full audit of what is in their service vehicle.)
 
-Open `index.html` in a browser if you want. No install.
+Open `index.html` in a browser if you want to see a clickable example. No install.
 
 ---
 
