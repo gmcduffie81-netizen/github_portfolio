@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ops Console — portfolio sample</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="top">
+    <div>
+      <div class="brand">Ops Console</div>
+      <div class="sub">Portfolio UI slice · synthetic data · not production</div>
+    </div>
+    <div class="who">G. McDuffie · Admin</div>
+  </header>
+
+  <nav class="chips" id="chips">
+    <button type="button" class="chip on" data-pane="home">Overview</button>
+    <button type="button" class="chip" data-pane="claims">Claims</button>
+    <button type="button" class="chip" data-pane="fleet">Fleet tickets</button>
+    <button type="button" class="chip" data-pane="r12">R12 / TC pack</button>
+    <button type="button" class="chip" data-pane="eod">EOD cascade</button>
+    <button type="button" class="chip" data-pane="people">Techs</button>
+  </nav>
+
+  <main>
+    <section id="pane-home" class="pane">
+      <div class="grid">
+        <div class="card"><div class="k">Open claims</div><div class="v">14</div><div class="s">3 need contact today</div></div>
+        <div class="card"><div class="k">Fleet open</div><div class="v">27</div><div class="s">6 past schedule</div></div>
+        <div class="card"><div class="k">TCs created yday</div><div class="v">11</div><div class="s">R12 daily pack</div></div>
+        <div class="card"><div class="k">Notes pending</div><div class="v">8</div><div class="s">FOS window open</div></div>
+      </div>
+      <p class="meta">Spider-web ingest feeds SQL → console, portal, and timed email reports (office → region → company).</p>
+    </section>
+
+    <section id="pane-claims" class="pane hidden">
+      <div class="tools">
+        <input class="search" type="search" placeholder="Search claim, customer, office…" />
+        <select class="sel">
+          <option>Open / active</option>
+          <option>All</option>
+          <option>Closed</option>
+        </select>
+      </div>
+      <div class="list">
+        <button type="button" class="row">
+          <div class="main">
+            <div class="t"><strong>CLM-2401</strong> <span class="pill ok">Closed</span></div>
+            <div class="d">Alex Rivera · North Yard · in-house $78 (contractor quoted $1,500)</div>
+          </div>
+          <span class="chev">›</span>
+        </button>
+        <button type="button" class="row">
+          <div class="main">
+            <div class="t"><strong>CLM-2403</strong> <span class="pill warn">Assessment</span></div>
+            <div class="d">Sam Patel · North Yard · contractor quote on file</div>
+          </div>
+          <span class="chev">›</span>
+        </button>
+        <button type="button" class="row">
+          <div class="main">
+            <div class="t"><strong>CLM-2402</strong> <span class="pill bad">Denied</span></div>
+            <div class="d">Jordan Lee · West Yard · assessment did not support liability</div>
+          </div>
+          <span class="chev">›</span>
+        </button>
+      </div>
+    </section>
+
+    <section id="pane-fleet" class="pane hidden">
+      <div class="tools">
+        <input class="search" type="search" placeholder="Van, office, vendor…" />
+        <select class="sel"><option>North Yard</option><option>West Yard</option></select>
+      </div>
+      <div class="list">
+        <div class="row static">
+          <div class="main">
+            <div class="t"><strong>UNIT-12</strong> <span class="pill warn">Scheduled</span></div>
+            <div class="d">City Tire · tomorrow 08:00 · oil + brakes</div>
+          </div>
+        </div>
+        <div class="row static">
+          <div class="main">
+            <div class="t"><strong>UNIT-44</strong> <span class="pill">Open</span></div>
+            <div class="d">No vendor yet · AC check</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pane-r12" class="pane hidden">
+      <h2>Daily TC / R12 pack</h2>
+      <p class="meta">Overnight creates · today’s schedule + tech · yesterday’s return repairs with notes classified by code dictionary.</p>
+      <div class="section-h">New TCs created yesterday <span class="badge">2</span></div>
+      <div class="list">
+        <div class="row static"><div class="main">
+          <div class="t"><strong>TC-90011</strong> · North Yard</div>
+          <div class="d">015D → Signal loss - weather · assigned A. Brooks today</div>
+        </div></div>
+        <div class="row static"><div class="main">
+          <div class="t"><strong>TC-90012</strong> · West Yard</div>
+          <div class="d">1553 → Wireless client disconnected · unassigned</div>
+        </div></div>
+      </div>
+      <div class="section-h">Returns completed yesterday <span class="badge">1</span></div>
+      <div class="list">
+        <div class="row static"><div class="main">
+          <div class="t"><strong>TC-89880</strong> · C. Diaz</div>
+          <div class="d">535 wiring · “replaced ground block… signal locked”</div>
+        </div></div>
+      </div>
+    </section>
+
+    <section id="pane-eod" class="pane hidden">
+      <h2>EOD note cascade</h2>
+      <ol class="steps">
+        <li><strong>Pull</strong> day-prior jobs + notes from external ops host → SQL</li>
+        <li><strong>Office supervisors</strong> get office-only pack → add notes</li>
+        <li><strong>Wait window</strong> so notes exist before leadership mail</li>
+        <li><strong>Re-sync</strong> notes from host/DB</li>
+        <li><strong>Regional managers</strong> review their offices + notes</li>
+        <li><strong>Company final</strong> day-prior reschedule / incomplete picture</li>
+      </ol>
+      <div class="list">
+        <div class="row static"><div class="main"><div class="t">05:00 · FOS wave</div><div class="d">8 offices queued</div></div></div>
+        <div class="row static"><div class="main"><div class="t">09:00 · RM wave</div><div class="d">3 regions queued</div></div></div>
+        <div class="row static"><div class="main"><div class="t">11:00 · Company final</div><div class="d">Directors + QA</div></div></div>
+      </div>
+    </section>
+
+    <section id="pane-people" class="pane hidden">
+      <div class="tools">
+        <input class="search" type="search" placeholder="Tech name, van…" />
+      </div>
+      <div class="list">
+        <div class="row static"><div class="main"><div class="t"><strong>A. Brooks</strong></div><div class="d">North Yard · UNIT-19 · 2 TCs today</div></div></div>
+        <div class="row static"><div class="main"><div class="t"><strong>R. Nguyen</strong></div><div class="d">East Yard · UNIT-03 · return follow-up</div></div></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+[
+  {"code": "015Z", "label": "Signal loss - complete / no protector (015Z)"},
+  {"code": "015Y", "label": "Signal loss - streaming available (015Y)"},
+  {"code": "015X", "label": "Signal loss - no streaming (015X)"},
+  {"code": "015N", "label": "Signal loss - no internet (015N)"},
+  {"code": "015D", "label": "Signal loss - weather related (015D)"},
+  {"code": "722K", "label": "Equipment issue / tech request (722K)"},
+  {"code": "612", "label": "Equipment issue / upgrade needed (612)"},
+  {"code": "535", "label": "Signal acquiring / wiring issue (535)"},
+  {"code": "1553", "label": "Wireless client disconnected (1553)"},
+  {"code": "1303", "label": "Client looking for server (1303)"},
+  {"code": "10", "label": "Wi-Fi connection failed (010)"},
+  {"code": "13", "label": "Authorization issue (013)"},
+  {"code": "24", "label": "Hard drive access issue (024)"}
+]

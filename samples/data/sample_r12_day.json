@@ -1,0 +1,84 @@
+{
+  "as_of": "2026-07-14",
+  "counts": {
+    "new_creates_yesterday": 2,
+    "scheduled_today": 2,
+    "returns_completed_yesterday": 1
+  },
+  "new_creates_yesterday": [
+    {
+      "work_order": "TC-90011",
+      "account": "A-104422",
+      "office": "North Yard",
+      "region": "North",
+      "create_date": "2026-07-13",
+      "schedule_date": "2026-07-14",
+      "assigned_tech": "A. Brooks",
+      "prior_work_order": "WO-88102",
+      "prior_tech": "J. Hale",
+      "reason": "Signal loss - weather related (015D)",
+      "prior_notes": "015D rain fade overnight customer still down",
+      "is_return": false
+    },
+    {
+      "work_order": "TC-90012",
+      "account": "A-108901",
+      "office": "West Yard",
+      "region": "West",
+      "create_date": "2026-07-13",
+      "schedule_date": "2026-07-15",
+      "assigned_tech": null,
+      "prior_work_order": "WO-87440",
+      "prior_tech": "M. Ortiz",
+      "reason": "Wireless client disconnected (1553)",
+      "prior_notes": "1553 wireless joey drop after reboot",
+      "is_return": false
+    }
+  ],
+  "scheduled_today": [
+    {
+      "work_order": "TC-90011",
+      "account": "A-104422",
+      "office": "North Yard",
+      "region": "North",
+      "create_date": "2026-07-13",
+      "schedule_date": "2026-07-14",
+      "assigned_tech": "A. Brooks",
+      "prior_work_order": "WO-88102",
+      "prior_tech": "J. Hale",
+      "reason": "Signal loss - weather related (015D)",
+      "prior_notes": "015D rain fade overnight customer still down",
+      "is_return": false
+    },
+    {
+      "work_order": "TC-89901",
+      "account": "A-100220",
+      "office": "East Yard",
+      "region": "East",
+      "create_date": "2026-07-12",
+      "schedule_date": "2026-07-14",
+      "assigned_tech": "R. Nguyen",
+      "prior_work_order": "WO-87001",
+      "prior_tech": "R. Nguyen",
+      "reason": "Equipment issue / tech request (722K)",
+      "prior_notes": "722K needs hopper swap",
+      "is_return": true
+    }
+  ],
+  "returns_completed_yesterday": [
+    {
+      "work_order": "TC-89880",
+      "account": "A-99110",
+      "office": "North Yard",
+      "region": "North",
+      "create_date": "2026-07-13",
+      "schedule_date": "2026-07-13",
+      "assigned_tech": "C. Diaz",
+      "prior_work_order": "WO-86002",
+      "prior_tech": "C. Diaz",
+      "reason": "Signal acquiring / wiring issue (535)",
+      "prior_notes": "535 replaced ground block and reseated connectors signal locked",
+      "is_return": true
+    }
+  ]
+}
