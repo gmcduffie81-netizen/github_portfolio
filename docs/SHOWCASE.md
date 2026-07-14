@@ -20,66 +20,69 @@ This isn't a school project. Think of it as an Operations Center spider web. It 
 
 ## The spider web
 
-Field companies live on other people's systems. Dispatch portals, ticket hosts, scorecards, Tableau, SharePoint, Google sheets, forms, GPS vendors — you name it.
+Field companies live on other people's systems. Over-priced usually, cookie-cutters, static portals, delayed imports, unpatched vularbilities with a backbone of coding that was written so long ago, no one there knows the flow so bandaids were built around it so everything works. I see this often where programs run to translate things so the original program understands. I build solutions to connect directly not something to make one building block compatible with a lego. Dispatch portals, ticket hosts, scorecards, Tableau, SharePoint, Google sheets, forms, GPS vendors - you name it. Yes, even those pesky PowerAutomate where they claim you don't even need to know how to code... right. I digress, Sorry.
 
-Before tools like this, people would:
+Before tools I introduced,  people would:
 
-1. Log into five sites  
-2. Export five spreadsheets  
-3. Argue which number was right (the office sheet, the incomplete download, or some mix of both)  
-4. Email the whole mess to everyone  
+1. Log into multiple sites. Checking if the data had been updated. (I believe they are manually entered on some.)
+2. Export five spreadsheets (Multiple times because a wrong date range, or Excel file from export didn't have a column expanded on the webpage.)  
+3. Argue with co-workers which numbers were right (the office sheet, the incomplete download, or some mix of both)
+4. Manipulate a template spreadsheet created by a guru by dumping it into the special 'Exports' tab, then refreshing data, and cursing at the Pivot Tables.
+5. Email the whole mess to everyone with some snipped screenshots that never sizes right for the force in the field.  
 
 What I put in place instead:
 
 ```
   Vendor sites / scorecards / Tableau / SharePoint / Google / forms / GPS
-              |
-              |  bots log in, download, scrape notes,
-              |  hit APIs where the site actually has one
-              v
-        Scrub, normalize, catch glitches
-              |
-              |  codes → dictionary, points, dates, offices
-              v
-           SQL warehouse
-              |
-    +---------+---------+---------+
-    |         |         |         |
- Console   Portal    Email     Night jobs
-  admins    techs    queue      reports
+                 |
+                 |  bots log in, download, scrape notes,
+                 |  hit APIs (a method for systems to transfer information simply) where posible.
+                 v
+        Scrub, normalize, catch glitches, remove that stray 0, add that trailing ' so an account number doesn't get lost to a weird "E+10"
+                 |
+                 |  codes → dictionary, points, dates, offices
+                 v
+         SQL warehouse
+                 |
+    +------------+-------------+---------+
+    |            |             |         |
+ Console       Portal        Email     Night jobs
+  admins        techs        queue      reports
+power users    On-the-Go
 ```
 
-Console is for power users — heavier work, SQL side is VPN-only in the real world.  
-Portal is for the road: simple jobs, tech stuff they need fast.  
+Console is for power users — heavier work, SQL side connection either in the office or a VPN in the real world. Benefits are ability for custom software to complete a specific task without the need for everyone to have it. Multiple console versions can exist and not conflict with each other.
+
+Portal is for the road: simple jobs, tech stuff they need fast. Filling out a vehicle checklist, finding a phone number for a technician in another office, etc. The supervisors spend their day staring at a windshield, juggling between technicians complaining, training new employees, submitting forms before deadlines. A lot to handle. The portal gives them the ability to ask an Ai chat console that is deeply buried and fenced off from the world information to make decisions. Questions like "Where is Johnny Tech?" would filter through a gateway that verifies they are asking from a device that was verified by a text message and the devices unique signature (in miliseconds), The exact GPS location reported from the vehicles onboard transmitter, the workorder information at that address, and a nifty link to start the mapping there should they need it.
 Anything that wants to send mail (console, portal, bots) lands in a SQL queue first. A separate email bot checks it, only sends if it passes the rules. If something looks wrong on purpose, the idea is full stop and IT gets notified — not silent garbage flying out the door.
 
 Point of all that: keep key people out of the weeds so they can see the whole board — office, region, company — without retyping someone else's grid into Excel after it's already stale.
 
 ---
 
-## End of day notes (it's a relay)
+## End of day notes (it's a relay where automation is human based intelligent answers)
 
 Not one giant email. A handoff.
 
 **1. Pull**  
-After the day closes / overnight, the system pulls completed and incomplete work plus notes from the outside dispatch host into SQL.
+After the day closes / overnight (around 3am to ensure nothing is delayed), the system wakes up a little bot that goes out and pulls completed and incomplete work plus notes from the outside dispatch host into SQL. No intelligence there, just a recorded set of actions it does in seconds, when the original operator took minutes.
 
 **2. Office supervisors first**  
-Each office gets *their* jobs only. They add real notes — why it didn't finish, parts, weather, customer, whatever actually happened.
+Each office gets *their* jobs only. Most jobs already have notes. Either supervisor knew it was happening or the technician followed the process. The notes are then ran against a fuzzy dictionary (Accepts common typos, like knowing "Atendence" is "Attendance" and places its best guess into report as the reason. The supervisoe then reviews and if needed they add notes to clarify- why it didn't finish, parts, weather, customer, whatever actually happened.
 
 **3. Wait a while**  
-Give them time to type. No point blasting regionals with empty notes.
+Give them time to type. No point blasting regionals with empty notes, or expect them to complete it while they have technicians bombarding them in an office with a deadline to get out the door in the field.
 
 **4. Sync again**  
-Pull notes back from the host (and lock what we need into SQL) so the supervisor updates are actually in the pack.
+Pull notes again from the website with notes. Update the reasons again now the supervisor has added context.
 
 **5. Regional managers**  
-Same day-prior story, rolled to their offices, with supervisor notes on it. They review and can add regional notes.
+Same workorder in the list, with the exception of jobs flagged through special notes to reclassify as closed (Bad data from import) or to fully delete from our system. (Workorder was completed by another vendor, but workorder showed in our system.) RM does a final review, makes sure that his office supervisor had the chance to complete it and if not, assist in getting that data input.
 
 **6. Company final later**  
-Directors / company list get the company-level view of the day prior — reschedules, incomplete picture, the whole note chain — without someone manually scrubbing it again.
+Directors / company list get the company-level view of the day prior — reschedules, incomplete picture, the complex notes transformed into a simple classification and a short blurb - without someone compiling by hand.
 
-Why bother with stages: close-up first (office), patterns next (region), whole picture last (company). Company execs are the ones who see everything; offices can be straight with their chain without every other office taking shots at them.
+Why bother with stages: Accountability. Visibility. Accuracy. Company execs are the ones who see everything; offices can be straight with their chain without every other office taking shots at them.
 
 Code sketch in the repo: `samples/eod_cascade.py`  
 Rough timing: early pull → supervisor mail → pause → note re-pull → RM mail → company final.
