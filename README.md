@@ -6,7 +6,7 @@ gmcduffie81@gmail.com
 
 ---
 
-## Never used GitHub? It's ok, I promise you're fine.
+## Never used GitHub? It's OK, I promise you're fine.
 
 It's basically a website that stores files for a project. You don't need an account. You don't need to install Python or "clone" anything.
 
