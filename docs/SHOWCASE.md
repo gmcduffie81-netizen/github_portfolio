@@ -20,7 +20,7 @@ This isn't a school project. Think of it as an Operations Center spider web. It 
 
 ## The spider web
 
-Field companies live on other people's systems. Over-priced usually, cookie-cutters, static portals, delayed imports, unpatched vularbilities with a backbone of coding that was written so long ago, no one there knows the flow so bandaids were built around it so everything works. I see this often where programs run to translate things so the original program understands. I build solutions to connect directly not something to make one building block compatible with a lego. Dispatch portals, ticket hosts, scorecards, Tableau, SharePoint, Google sheets, forms, GPS vendors - you name it. Yes, even those pesky PowerAutomate where they claim you don't even need to know how to code... right. I digress, Sorry.
+Field companies live on other people's systems. Over-priced usually, cookie-cutters, static portals, delayed imports, unpatched vulnerbilities with a backbone of coding that was written so long ago, no one there knows the flow so bandaids were built around it so everything works. I see this often where programs run to translate things so the original program understands. I build solutions to connect directly not something to make one building block compatible with a lego. Dispatch portals, ticket hosts, scorecards, Tableau, SharePoint, Google sheets, forms, GPS vendors - you name it. Yes, even those pesky PowerAutomate where they claim you don't even need to know how to code... right. I digress, Sorry.
 
 Before tools I introduced,  people would:
 
@@ -36,7 +36,7 @@ What I put in place instead:
   Vendor sites / scorecards / Tableau / SharePoint / Google / forms / GPS
                  |
                  |  bots log in, download, scrape notes,
-                 |  hit APIs (a method for systems to transfer information simply) where posible.
+                 |  hit APIs (a method for systems to transfer information simply) where possible.
                  v
         Scrub, normalize, catch glitches, remove that stray 0, add that trailing ' so an account number doesn't get lost to a weird "E+10"
                  |
@@ -70,7 +70,7 @@ Not one giant email. A handoff.
 After the day closes / overnight (around 3am to ensure nothing is delayed), the system wakes up a little bot that goes out and pulls completed and incomplete work plus notes from the outside dispatch host into SQL. No intelligence there, just a recorded set of actions it does in seconds, when the original operator took minutes.
 
 **2. Office supervisors first**  
-Each office gets *their* jobs only. Most jobs already have notes. Either supervisor knew it was happening or the technician followed the process. The notes are then ran against a fuzzy dictionary (Accepts common typos, like knowing "Atendence" is "Attendance" and places its best guess into report as the reason. The supervisoe then reviews and if needed they add notes to clarify- why it didn't finish, parts, weather, customer, whatever actually happened.
+Each office gets *their* jobs only. Most jobs already have notes. Either supervisor knew it was happening or the technician followed the process. The notes are then ran against a fuzzy dictionary (Accepts common typos, like knowing "Atendence" is "Attendance" and places its best guess into report as the reason. The supervisor then reviews and if needed they add notes to clarify- why it didn't finish, parts, weather, customer, whatever actually happened.
 
 **3. Wait a while**  
 Give them time to type. No point blasting regionals with empty notes, or expect them to complete it while they have technicians bombarding them in an office with a deadline to get out the door in the field.
