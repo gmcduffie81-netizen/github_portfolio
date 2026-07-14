@@ -70,9 +70,10 @@ Rough map of samples:
 
 Passwords, live connections, real customer/employee data, production hosts, the full source tree. Also not a product you're supposed to install at work next week.
 
-## Comments in code. PEP Standards not in here. Fellow coders, I promise it's not because I was lazy.
+## Comments in code. PEP Standards not in here. Fellow coders, I promise it's not because I was lazy
 
 It wasn't because I forgot them, either. Its because these code examples are to show the bolts I made to build something that had no blueprint. If you are a fellow coder and some of my code is what you need for your project, reach out to me, I'll gladly give you more insight and applying it to use.
+
 ---
 
 Thanks for taking a look. If something's unclear, email me — I'll explain it straight.
