@@ -1,4 +1,4 @@
-# Field ops portfolio
+# Field OPS Portfolio
 
 Glenn McDuffie  
 https://github.com/gmcduffie81-netizen/github_portfolio  
@@ -6,13 +6,13 @@ gmcduffie81@gmail.com
 
 ---
 
-## Never used GitHub? You're fine.
+## Never used GitHub? It's ok, I promise you're fine.
 
 It's basically a website that stores files for a project. You don't need an account. You don't need to install Python or "clone" anything.
 
 Here's all I need you to do:
 
-1. Read this page (you're already here).
+1. Read this page (You're already here, Thank you! I am truly humbled and honored you gave me a moment).
 2. Click **[docs/SHOWCASE.md](docs/SHOWCASE.md)** and read that next. That's the real story.
 3. If you're not a coder, stop there. Seriously. That's enough.
 4. If you want a rough screen mock, open `samples/console_ui/index.html` somehow on a computer and double-click it. Optional.
@@ -23,7 +23,7 @@ I spend a lot of time building tools so regular leaders aren't lost in tech. Fig
 
 ---
 
-## What I care about
+## What I Care about
 
 I try to hand people solutions, not more confusion.
 
@@ -33,23 +33,23 @@ This repo is just a window into that. It's not a test to see if you know Git.
 
 ---
 
-## What this is / isn't
+## What this IS and what it ISN'T
 
-I built a full ops setup for multi-office field work by myself — console, portal, bots, reports, claims tools, etc.
+I built a full ops setup for multi-office field work covering four states by myself - console, portal, bots, web scrappers, reports, claims tools, etc.
 
-**None of that live production system is sitting here.** On purpose.
+**None of that live production system is sitting here.** On purpose. 
 
-What's here is smaller on purpose too. Fake data. Short code files that show the *shape* of a flow, not the whole factory. If it looks basic compared to a commercial product, good — I wasn't trying to open-source the real stack or give away a company platform.
+What's here is smaller on purpose too. Fake data. Short code files that show the *shape* of a flow, not the whole factory. If it looks basic compared to a commercial product, good - I wasn't trying to open-source the real stack or give away things that lived in my brain, haunted me with bugs, and became a solution that some would re-package, slap a barcode on and sell as their own. This solution is Middleware and end solution wrapped together in a pretty package.
 
 The long version of the design is in SHOWCASE. If you want the full tour of what actually runs day to day, that's a conversation. Happy to do that live.
 
 ---
 
-## Where to click
+## Where to Click
 
 **Everyone:** [docs/SHOWCASE.md](docs/SHOWCASE.md)
 
-Covers the spider-web data pulls, the end-of-day note relay (office → region → company), the daily trouble-call / R12 style pack, claims (including a $1500 vs $78 repair story), and why console and portal are different.
+Covers the spider-web data pulls, the end-of-day note relay (office -> region -> company), the daily trouble-call / R12 style pack, claims (including a $1500 vs $78 repair story), and why console and portal are different.
 
 **Coders only if you want:** poke around under `samples/`. Read in the browser. No install required.
 
@@ -70,9 +70,9 @@ Rough map of samples:
 
 Passwords, live connections, real customer/employee data, production hosts, the full source tree. Also not a product you're supposed to install at work next week.
 
-## Comments in code. PEP Standards not in here
+## Comments in code. PEP Standards not in here. Fellow coders, I promise it's not because I was lazy.
 
-This wasn't because I forgot them. Its because these coding examples are meant to show others who know what my abilities are. If you are a fellow coder and some of my code is what you need, reach out to me, I'll gladly give you more insight and function use.
+It wasn't because I forgot them, either. Its because these code examples are to show the bolts I made to build something that had no blueprint. If you are a fellow coder and some of my code is what you need for your project, reach out to me, I'll gladly give you more insight and applying it to use.
 ---
 
 Thanks for taking a look. If something's unclear, email me — I'll explain it straight.
