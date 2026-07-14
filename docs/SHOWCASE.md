@@ -61,6 +61,8 @@ Point of all that: keep key people out of the weeds so they can see the whole bo
 ---
 
 ## End of day notes (it's a relay where automation is human based intelligent answers)
+<img width="1826" height="827" alt="image" src="https://github.com/user-attachments/assets/f49d84df-72ec-4c7d-b281-9568c5f96021" />
+
 
 Not one giant email. A handoff.
 
