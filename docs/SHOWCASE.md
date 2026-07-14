@@ -7,7 +7,7 @@ This is not a homework app. It is an **ops spider web**: go out to other compani
 
 ---
 
-## The spider web (plain English)
+## The spider web
 
 Field companies live on **other people’s systems** — dispatch portals, ticket hosts, scorecards, Tableau workbooks, SharePoint lists, Google sheets, form tools, GPS vendors.
 
