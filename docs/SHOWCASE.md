@@ -1,10 +1,18 @@
-# What this system actually is
+# What this System actually is
 
-Glenn McDuffie — I built this alone.
+Glenn McDuffie - I built this alone. No I'm not bragging because none of the other programmers helped. You see, I am the only one there. I wasn't hired to do it, It all started when the Director at one time asked. "Hey, When you first came on-board 7 or so years ago, you mentioned to me you went to school for programming. We were wondering maybe you could tell us how we could effectively send emails to all the technicians daily about how well the are doing and where they stand on meeting metric minimums for their bonuses."
+
+**This was the event that started everything**
+
+Yes, I did attend a University for a stent, but like many others, the pace was painful. If they made me write one more silly script that had no purpose, no end goal other than proving I could read directions on making a peanut butter sandwich. I would have lost my passion and made it into something I didnt want it to be.
+
+Months of trial-and-error, days of fixing numbers that were miscalculated, random days where codes broke because something new came in that wasn't expected. As Thomas Edison stated regarding the light bulb, he did not fail over a thousand times, he simply found ways that did not work.
+
+My skillset is not the things I know now, it is my dedication to experience and master the things I do not.
 
 Repo: https://github.com/gmcduffie81-netizen/github_portfolio
 
-This isn't a school project. Think of it as an ops spider web. It goes out to other companies' websites and dumps, cleans up the mess, drops it in SQL, then gets the right piece of truth to the right person at the right hour.
+This isn't a school project. Think of it as an Operations Center spider web. It goes out to other companies' websites and dumps, cleans up the mess, drops it in SQL, then gets the right piece of truth to the right person at the right hour. Data everywhere make it impossible to make it useful anywhere.
 
 ---
 
