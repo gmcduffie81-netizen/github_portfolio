@@ -6,86 +6,103 @@ Contact: gmcduffie81@gmail.com
 
 ---
 
+## If you don’t know what GitHub is — you’re still in the right place
+
+**GitHub is just a website that holds project files.**  
+You do **not** need an account, you do **not** need to install anything, and you do **not** need to “run code” to get value here.
+
+### What to do (60 seconds)
+
+1. You’re already looking at this page — that’s enough for the overview.  
+2. Click this blue link: **[docs/SHOWCASE.md](docs/SHOWCASE.md)**  
+3. Read it like a short story about a system I built for real field operations.  
+4. (Optional) Click into any file under `samples/` if you’re curious. You can **read** them in the browser. Nothing will break if you don’t.  
+5. (Optional) If you want to see a simple screen mockup: open  
+   `samples/console_ui/index.html` — on GitHub, open the file, then use the raw/view options, **or** download the folder and double‑click `index.html` on a PC. Still no programming required.
+
+**If a folder looks confusing, skip it.** The story is in SHOWCASE. The rest is backup for technical interviewers.
+
+I build systems so **non‑technical leaders aren’t lost**. This page should work the same way.
+
+---
+
+## My intent (and my promise)
+
+I provide **solutions, not confusion**.
+
+That means:
+
+- The right person gets the right information at the right time — not a 40‑tab mess  
+- Bosses see the whole board; offices aren’t drowned in other people’s noise  
+- Techs get a simple phone path for the jobs they actually do  
+- When software isn’t enough, I still show up for the customer (claims, repairs, training)  
+
+This public repo is a **clear window**, not a test to see if you can use developer tools.
+
+---
+
 ## Why this repo exists
 
-I built a full operations stack for real multi-office field work — console, tech portal, bots, timed reports, claims tools, the works — **as the only coder**.
+I built a full operations stack for multi‑office field work — console, tech portal, bots, timed reports, claims tools — **as the only coder**.
 
-This GitHub is **not** that production system.
+**This GitHub is not that live production system.**
 
-It is a **public proof of concept**: enough structure and story for a hiring manager or engineer to see *how I think*, *what I own*, and *what the real system does*, without dumping live infrastructure, credentials, or a free reverse-engineering manual of a company platform.
+It is a **public proof of concept**: enough story and structure for a hiring manager, owner, or engineer to see *how I think* and *what I own*, without dumping secrets or a free rebuild kit of a company platform.
 
-If the code looks simple, that is **on purpose**.
+If some code files look simple, that is **on purpose**. They are illustrations of flow — not the full factory floor.
 
----
+| This repo | The real system (not published here) |
+|-----------|--------------------------------------|
+| Short modules + plain English docs | Large production apps, many jobs, servers, databases |
+| Fake / sample data | Live tickets, people, offices |
+| Read in the browser | Running services used every day |
 
-## How to read this (important)
-
-| This repo | The real system (not here) |
-|-----------|----------------------------|
-| Short, clear modules | Large production tree, many jobs, edge deploy, SQL, integrations |
-| Synthetic / fake data | Live tickets, people, offices |
-| No teaching comments in code | Full operational complexity |
-| Static console UI sample | Full SPA + auth + APIs |
-| Patterns and flow | Running services 24/7 |
-
-**Do not judge production ability by line count in these files.**  
-Judge the **problem**, the **cascade**, and the **intent** in `docs/SHOWCASE.md`, then ask me to walk the real architecture in an interview.
+**Do not score me only by how fancy these sample files look.**  
+Score the **problems I chose to solve** and the **cascade of who gets what report**. Ask me in an interview for the full walkthrough.
 
 ---
 
-## Intent for visitors
+## Start here (everyone)
 
-1. **Show the map** — spider-web ingest, EOD note relay, R12/TC daily pack, claims, console/portal split  
-2. **Show ownership** — sole builder; system + customer-facing claims + specialized training  
-3. **Stay safe** — no production secrets, no customer data, no “here’s how to rebuild our stack” dump  
-4. **Stay honest** — samples are **POC / illustration**, not a shippable product you clone into production tomorrow  
+**[docs/SHOWCASE.md](docs/SHOWCASE.md)** — plain English:
 
----
-
-## Start here
-
-**[docs/SHOWCASE.md](docs/SHOWCASE.md)** — plain-English tour of the real design:
-
-- Pulling messy data from vendor sites, Tableau, SharePoint, Google, forms, GPS → clean → SQL  
-- End-of-day reports: office supervisors → wait for notes → re-sync → regional managers → company final  
-- Daily R12/TC pack: overnight creates, today’s schedule + tech, return trips with repair notes + code dictionary  
-- Why normalize (point glitches, bad dates, three spellings of the same tech)  
-- Claims as process + tools ($1,500 contractor vs $78 in-house example in sample data)  
-
-Then browse `samples/` if you want to see the **shape** of the logic.
+- Pulling messy data from many places into one clean system  
+- End‑of‑day reports: office supervisors → time for notes → regional managers → company final  
+- Daily R12 / trouble‑call pack (what came back, who’s on it today, what the return tech fixed)  
+- Claims — software **and** customer‑facing process ($1,500 quote vs $78 in‑house fix in the sample story)  
+- Console / portal idea and why both exist  
 
 ---
 
-## What’s in `samples/`
+## For technical reviewers only (optional)
 
-| Path | POC for |
-|------|---------|
-| `ingest_spiderweb.py` | Multi-source pull, normalize, glitch flags |
-| `eod_cascade.py` | Timed office → region → company report relay |
-| `r12_pipeline.py` | TC sections + reason-code dictionary |
-| `access_control.py` | Roles, feature switches, office lock |
-| `schedule_state.py` | Fleet ticket schedule / miss / close |
-| `claims_flow.py` | Claim path + contractor vs in-house cost |
-| `console_ui/` | Open `index.html` in a browser (static UI slice) |
-| `data/` | Fake tickets, claims, R12 day pack, reason codes |
+| Path | Shape of the idea |
+|------|-------------------|
+| `samples/ingest_spiderweb.py` | Many sources → clean data |
+| `samples/eod_cascade.py` | Office → region → company timing |
+| `samples/r12_pipeline.py` | TC sections + reason codes |
+| `samples/access_control.py` | Who is allowed to see what |
+| `samples/schedule_state.py` | Schedule / miss / close |
+| `samples/claims_flow.py` | Claim path + cost comparison |
+| `samples/console_ui/` | Static UI mock (open `index.html`) |
+| `samples/data/` | Fake examples only |
 
-Code is kept **comment-light** on purpose. The explanation lives in the docs and in conversation with me — not as a tutorial for strangers.
+No need to install Python or “clone” anything unless you want to.
 
 ---
 
 ## What is *not* in this repo
 
-- Production passwords, APIs keys, cookies, or connection strings  
-- Real hostnames of live internal systems  
-- Customer, tech, or employee PII  
-- Full production source tree  
-- A turnkey replacement for a real ops platform  
+- Passwords, keys, or live connections  
+- Real customer or employee private data  
+- The full production source tree  
+- A product you are expected to install and run at work tomorrow  
 
 ---
 
 ## One line
 
-Real system: spider web into SQL, right report to the right leader at the right time.  
-This repo: proof of concept so you can decide if you want the interview.
+I build tools that remove confusion for the people doing the work.  
+This page is built the same way — **read SHOWCASE, skip what you don’t need, call me if you want the real tour.**
 
 Thanks for looking.
