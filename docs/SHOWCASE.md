@@ -2,11 +2,11 @@
 
 Glenn McDuffie - I built this alone. 
 
-**No I'm not bragging** because none of the other programmers helped. You see, I am the only one there. (ok.. maybe a little bragging.) I wasn't hired to do it, It all started when the Director at one time asked. "Hey, When you first came on-board 7 or so years ago, you mentioned to me you went to school for programming. We were wondering maybe you could tell us how we could effectively send emails to all the technicians daily about how well the are doing and where they stand on meeting metric minimums for their bonuses."
+**No I'm not bragging** because none of the other programmers helped. You see, I am the only one there. (ok.. maybe a little bragging.) I wasn't hired to do it, It all started when the Director at one time asked. "Hey, When you first came on-board 7 or so years ago, you mentioned to me you went to school for programming. We were wondering maybe you could tell us how we could effectively send emails to all the technicians daily about how well they are doing and where they stand on meeting metric minimums for their bonuses."
 
 **This was the event that started everything**
 
-Yes, I did attend a University for a stent, but like many others, the pace was painful. If they made me write one more silly script that had no purpose, no end goal other than proving I could read directions on making a peanut butter sandwich. I would have lost my passion and made it into something I didnt want it to be.
+Yes, I did attend a University for a stint, but like many others, the pace was painful. If they made me write one more silly script that had no purpose, no end goal other than proving I could read directions on making a peanut butter sandwich. I would have lost my passion and made it into something I didnt want it to be.
 
 Months of trial-and-error, days of fixing numbers that were miscalculated, random days where codes broke because something new came in that wasn't expected. As Thomas Edison stated regarding the light bulb, he did not fail over a thousand times, he simply found ways that did not work.
 
