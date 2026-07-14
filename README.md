@@ -70,6 +70,9 @@ Rough map of samples:
 
 Passwords, live connections, real customer/employee data, production hosts, the full source tree. Also not a product you're supposed to install at work next week.
 
+## Comments in code. PEP Standards not in here
+
+This wasn't because I forgot them. Its because these coding examples are meant to show others who know what my abilities are. If you are a fellow coder and some of my code is what you need, reach out to me, I'll gladly give you more insight and function use.
 ---
 
 Thanks for taking a look. If something's unclear, email me — I'll explain it straight.
