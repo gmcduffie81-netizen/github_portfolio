@@ -140,6 +140,7 @@ Open `index.html` in a browser if you want to see a clickable example. No instal
 ---
 
 ## Damage claims
+<img width="1699" height="677" alt="image" src="https://github.com/user-attachments/assets/337377a1-3153-4747-8769-854dee7426ab" />
 
 I own the process and the tools.
 
@@ -151,9 +152,9 @@ Example that's in the sample data story: contractor wanted $1500. I fabbed a bra
 
 ## Training
 
-I'm the only trainer we had on the advanced tracks I ran:
+I'm the master trainer for advanced skill training. 
 
-Boost Mobile Tech Expert, SimpliSafe advanced troubleshooting, Flock Safety, maintenance trainer.
+Because of my drive to understand emerging technologies, troubleshooting when the guides fail you, I am the first to learn any new line up or program. I think translate complex information, in an organized manner to help bridge the gap between different learning traits.
 
 ---
 
