@@ -35,7 +35,7 @@ This repo is just a window into that. It's not a test to see if you know Git.
 
 ## What this IS and what it ISN'T
 
-I built a full ops setup for multi-office field work covering four states by myself - console, portal, bots, web scrappers, reports, claims tools, etc.
+I built a full ops setup for multi-office field work covering four states by myself - console, portal, bots, web scrapers, reports, claims tools, etc.
 
 **None of that live production system is sitting here.** On purpose. 
 
