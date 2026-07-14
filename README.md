@@ -55,14 +55,14 @@ Covers the spider-web data pulls, the end-of-day note relay (office -> region ->
 
 Rough map of samples:
 
-- `ingest_spiderweb.py` — many sources, clean-up, bad number checks  
-- `eod_cascade.py` — timed mail waves  
-- `r12_pipeline.py` — TC sections + code dictionary  
-- `access_control.py` — who can see what  
-- `schedule_state.py` — schedule / miss / close  
-- `claims_flow.py` — claim path + costs  
-- `console_ui/` — static mock screens  
-- `data/` — fake examples  
+- `ingest_spiderweb.py` - many sources, clean-up, bad number checks  
+- `eod_cascade.py` - timed mail waves  
+- `r12_pipeline.py` - TC sections + code dictionary  
+- `access_control.py` - who can see what  
+- `schedule_state.py` - schedule / miss / close  
+- `claims_flow.py` - claim path + costs  
+- `console_ui/` - static mock screens  
+- `data/` - fake examples  
 
 ---
 
@@ -76,4 +76,4 @@ It wasn't because I forgot them, either. Its because these code examples are to 
 
 ---
 
-Thanks for taking a look. If something's unclear, email me — I'll explain it straight.
+Thanks for taking a look. If something's unclear, email me - I'll explain it straight.
